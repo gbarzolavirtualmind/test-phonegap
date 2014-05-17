@@ -1,0 +1,17 @@
+{
+    "prepare_queue": {
+        "installed": [
+            {
+                "plugin": "com.phonegap.plugins.mapkit",
+                "vars": {
+                    "API_KEY": "SUPERKEY"
+                },
+                "topLevel": true
+            }
+        ],
+        "uninstalled": []
+    },
+    "config_munge": {},
+    "installed_plugins": {},
+    "dependent_plugins": {}
+}

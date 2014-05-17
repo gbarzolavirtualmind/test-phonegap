@@ -1,61 +1,34 @@
 <!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta name="format-detection" content="telephone=no" />
-    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.3.0.min.css" /> -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?keyAIzaSyAT3bjwA4Zs00fDm_2eziLkoN2UgCzmTzo&ensor=true"></script>
-    <style type="text/css">
-        html, body, #map
-        {
-            height: 100%;
-        }
-        #map
-        {
-            width: 100%;
-        }
-    </style>
-    <title>Hello World</title>
+    <title>My App</title>
+
+    <link rel="stylesheet" type="text/css" href="css/dx.common.css" />
+    <link rel="stylesheet" type="text/css" href="css/dx.ios.default.css" />
+    <link rel="stylesheet" type="text/css" href="css/dx.android.holo-dark.css" />
+    <link rel="stylesheet" type="text/css" href="css/dx.win8.black.css" />
+    <link rel="stylesheet" type="text/css" href="css/dx.tizen.black.css" />
+    <link rel="stylesheet" type="text/css" href="css/dx.generic.light.css" />
+
+    <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="js/knockout-3.0.0.js"></script>
+    <script type="text/javascript" src="js/globalize.min.js"></script>
+    <script type="text/javascript" src="js/dx.phonejs.js"></script>
+    
+    <!-- Layouts -->
+    <script type="text/javascript" src="layouts/Empty/EmptyLayout.js"></script>
+    <link rel="stylesheet" type="text/css" href="layouts/Empty/EmptyLayout.css" />
+    <link rel="dx-template" type="text/html" href="layouts/Empty/EmptyLayout.html"/>
+
+    <!-- App views -->
+    <script type="text/javascript" src="views/home.js"></script>
+    <link rel="dx-template" type="text/html" href="views/home.html"/>
+    
 </head>
 <body>
-    <div id="map"></div>
-    <!-- <div id="reposHome" data-role="page">
-        <div data-role="header" data-position="fixed">
-            <h1>GitHub Search</h1>
-        </div>
-        
-        <div data-role="content">
-            <ul id="allRepos" data-role="listview"  data-filter="true">
-            </ul>
-        </div>
-    </div> -->
-    <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
-    <!--<script type="text/javascript" src="js/jquery.mobile-1.3.0.min.js"></script> -->
-    <script type="text/javascript" src="phonegap.js"></script>
+    <div id="viewport" class="dx-viewport dx-ios-stripes"></div>
     <script type="text/javascript" src="js/index.js"></script>
-    <script type=" text/javascript">
-        app.initialize();
-    </script>
 </body>
+
 </html>

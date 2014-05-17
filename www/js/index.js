@@ -20,6 +20,7 @@
  var app = {
     // Application Constructor
     initialize: function() {
+        alert(1);
         this.bindEvents();
     },
     // Bind Event Listeners
@@ -27,6 +28,7 @@
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
+        alert(2);
         document.addEventListener('deviceready', this.initializeMap, false);
     },
     // deviceready Event Handler
@@ -34,6 +36,7 @@
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicity call 'app.receivedEvent(...);'
     initializeMap: function() {
+        alert(3);
         var mapOptions = {
             center: new google.maps.LatLng(43.069452, -89.411373),
             zoom: 11,
